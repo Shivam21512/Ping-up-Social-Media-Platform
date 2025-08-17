@@ -12,14 +12,24 @@ import { useUser, useAuth } from '@clerk/clerk-react'
 import Layout from './pages/Layout'
 import {Toaster} from 'react-hot-toast'
 import { useEffect } from 'react'
+import { fetchUser } from './features/user/userSlice'
+import { useDispatch } from 'react-redux'
 
 const App = () => {
   const {user} = useUser()
   const {getToken} = useAuth()
+  const dispatch = useDispatch();
+
 
   useEffect(()=>{
-    getToken().then((token) => console.log(token))
-  }, [user])
+    const fetchData = async () => {
+      if(user){
+        const token = await getToken();
+        dispatch(fetchUser(token));
+      }
+    }
+    fetchData()
+  }, [user, getToken, dispatch]);
   
   return (
     
