@@ -5,6 +5,7 @@ import User from "../models/User.js"
 import fs from 'fs'
 import userRouter from "../routes/userRoute.js"
 import { inngest } from "../inngest/index.js"
+import Post from "../models/Post.js"
 
 
 // Get User data using userID
