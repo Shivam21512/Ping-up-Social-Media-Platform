@@ -122,7 +122,7 @@ export const getChatMessages = async(req,res) =>{
 
 
 export const getUserRecentMessages = async (req, res) => {
-    try {
+    try { 
         const { userId } = req.auth();
 
         // Find all messages sent to the logged-in user

@@ -10,7 +10,7 @@ export const fetchMessages = createAsyncThunk(
   async ({ token, userId }) => {
     const { data } = await api.post(
       '/api/message/get',
-      { to_user_id: userId },  // 👈 body param
+      { to_user_id: userId },
       { headers: { Authorization: `Bearer ${token}` } }
     );
 
@@ -45,6 +45,9 @@ const messagesSlice = createSlice({
 
 export const { setMessages, addMessages, resetMessages } = messagesSlice.actions;
 export default messagesSlice.reducer;
+
+
+
 // import { createSlice } from '@reduxjs/toolkit'
 
 // const initialState = {
