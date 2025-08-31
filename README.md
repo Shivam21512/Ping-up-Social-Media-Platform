@@ -45,5 +45,3 @@ This project showcases modern **real-world application architecture** with secur
 - **Authentication** → Clerk  
 - **Background Jobs** → Inngest  
 - **Media Storage** → ImageKit  
-git clone https://github.com/your-username/social-media-app.git
-cd social-media-app
