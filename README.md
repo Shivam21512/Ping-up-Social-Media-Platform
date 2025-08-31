@@ -6,7 +6,7 @@ This project showcases modern **real-world application architecture** with secur
 ---
 
 ## 🌍 Live Demo  
-🔗 [Click here to try the live app](https://your-live-demo-url.com)  
+🔗 [Click here to try the live app](https://ping-up-bay.vercel.app)  
 
 ---
 
@@ -45,12 +45,5 @@ This project showcases modern **real-world application architecture** with secur
 - **Authentication** → Clerk  
 - **Background Jobs** → Inngest  
 - **Media Storage** → ImageKit  
-
----
-
-## 🚀 Getting Started
-
-### 1️⃣ Clone the repository
-```bash
 git clone https://github.com/your-username/social-media-app.git
 cd social-media-app
